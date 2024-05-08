@@ -152,7 +152,8 @@ set(ISAAC_LIBRARIES ${ISAAC_LIBRARIES} Threads::Threads)
 ################################################################################
 # IceT LIB
 ################################################################################
-find_package (IceT CONFIG QUIET)
+# PATH_SUFFIXES is required because IceT is not following the CMake find_package folder structure
+find_package (IceT CONFIG QUIET PATH_SUFFIXES "/lib/")
 if (NOT IceT_FOUND)
     set(ISAAC_DEPENDENCY_HINTS ${ISAAC_DEPENDENCY_HINTS} "\n--   IceT")
 endif()

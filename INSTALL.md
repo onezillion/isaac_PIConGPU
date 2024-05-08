@@ -137,7 +137,7 @@ The ISAACConfig.cmake searches for these requirements. See
       * Now a local version of IceT is installed in the install
         directory in the IceT root folder. Later while compiling
         an application using ISAAC (including the examples) add
-        `-DIceT_DIR=$ICET/install/lib`, where
+        `-DIceT_DIR=$ICET/install`, where
         `$ICET` is the root folder of IceT (the directory
         `git clone …` created).
 * __MPI__ for the communication on the cluster. This should be available on
