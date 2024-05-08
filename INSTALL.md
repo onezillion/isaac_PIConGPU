@@ -162,12 +162,11 @@ The ISAACConfig.cmake searches for these requirements. See
         the OpenMPI folder. Later while compiling an application using
         MPI (including the ISAAC examples) add `$MPI/install` to the
         CMake variable `CMAKE_MODULE_PATH` to use this version.
-* __glm__ for the internal math types and functions
-  * _From Source_ (we require a not yet released version of glm):
-    * `git clone https://github.com/g-truc/glm.git`
+* __glm__ 1.0.0+ for the internal math types and functions
+  * _From Source_:
+    * `git clone https://github.com/g-truc/glm.git` --depth 1 --branch 1.0.1
     * `cd glm`
-    * `git checkout 6ad79aae3eb5bf809c30bf1168171e9e55857e45`
-    * `export GLM_ROOT=`pwd`/0.9.9.9-dev`
+    * `export GLM_ROOT=`pwd`/1.0.1`
     * `mkdir $GLM_ROOT`
     * `mkdir build`
     * `cd build`
